@@ -60,3 +60,30 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#hamlでの記載方法のため
+gem 'haml-rails'
+gem 'erb2haml'
+
+#AWSデプロイ機能のため
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog-aws'
+
+#デプロイを行う為にユニコーン追加
+group :production do 
+     gem 'unicorn', '5.4.1'
+end
+
+#アイコンとログイン機能
+gem "font-awesome-rails"
+gem 'devise'
+gem 'font-awesome-sass'
+
+# JS
+gem "jquery-rails"
+
+# デバック
+gem 'pry-rails'
+gem 'pry-byebug'
+gem 'pry-doc'
